@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 2</title>
+  </head>
+  <body>
+    <h1>Recebendo dados</h1>
+
+    <section id="result"></section>
+
+    <script>
+      let name = window.prompt("Digite o nome do aluno");
+      let n1 = Number(window.prompt(`Qual foi a primeira nota de ${name}`));
+      let n2 = Number(
+        window.prompt(`Além de ${n1}, qual foi a outra nota de ${name}`)
+      );
+
+      let med = (n1 + n2) / 2;
+
+      let msg; // criar uma msg na tela
+      if (med >= 6) {
+        msg = "Meus parabéns!";
+      } else {
+        msg = "Estude um pouco mais";
+      }
+
+      let res = document.getElementById("result");
+
+      res.innerHTML = `<p>Calculando a média final de ${name}</p>`;
+      res.innerHTML += `<p>As notas foram ${n1} e ${n2}</p>`;
+      res.innerHTML += `<p>A médifa final foi ${med}</p>`;
+      res.innerHTML += `<p>O aluno <strong style='color:red'>${msg}</strong></p>`;
+    </script>
+  </body>
+</html>
