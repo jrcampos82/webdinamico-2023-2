@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 - Arrays</title>
+</head>
+<body>
+
+    <h1>Arrays / Objetos String</h1>
+
+    <ul>
+        <li>valueOf()</li> - retorna o valor primitivo do objeto
+        <li>charAt()</li> - retorna uma string contendo o caracter de posição *importante
+        <li>concat(string, string...)</li> - este método retorna uma string contendo string + string (concatena)
+        <li>replace</li> - busca na string uma substring que seja igual ao conteúdo
+        <li>slice(ini, fim)</li> - retorna a substring contendo os caracteres de inicio até o fim 
+        <li>split(separator, limit)</li> - retorna um obj. array contendo as substring entre o separator e limit
+        <li>substring (inicio, fim)</li> - retorna o resultado da conversão do objeto que chamou o método (inicio, fim)
+        <li>toLowerCase()</li> - 
+        <li>toUpperCase()</li> - 
+    </ul>
+
+    <h1>Arrays</h1>
+
+    <ul>
+        <li>concat</li> - agrupa todos os elementos do array
+        <li>pop()</li> - o último elemento do array vai ser removido * 
+        <li>push()</li> - insere o elemento no final do vetor *
+        <li>shift()</li> - o primiro elemento é removido
+        <li>sort()</li> - ordena vetor (string)
+        <li>length()</li> - propriedade que contém o tamanho do vetor *
+    </ul>
+    
+    <script>
+        // teste valueOf
+        var s = new String("Gerador de Campos")
+        var str = s.valueOf()
+        document.write(str);
+        document.write("<br>")
+
+        //charAt
+        var str1 = "Instituto"
+        var carac = str1.charAt(3)
+        document.write(carac);
+        document.write("<br>")
+
+
+        //concat
+        var str2 = "Praticando ", str3 = "JavaScript"
+        var result = str2.concat(str3)
+        document.write(result);
+        document.write("<br>")
+
+        //replace
+        var a = "Não esqueca de estudar"
+        var res1 = a.replace("esqueca", "pare")
+        document.write(res1);
+        document.write("<br>")
+
+        //slice
+        var str4 = "Até mais e obrigado!"
+        var res2 = str4.slice (4, 10) //result ->
+        var res3 = str4.slice(7) //result ->
+        var res4 = str4.slice(-5, -1) //result ->
+        document.write(res2);
+        document.write("<br>")
+        document.write(res3);
+        document.write("<br>")
+        document.write(res4);
+
+
+        //split
+        var data = "Terra, Marte, Jupter"
+        var arr1 = data.split(", ") //result ->
+        var arr2 = data.split(", ", 2) //result ->
+        document.write("<br>")
+        document.write(arr1);
+        document.write("<br>")
+        document.write(arr2);
+
+        //arrays
+        var vetor = [4, 8, 15, 16, 23, 42]
+        var res5 = vetor.pop() // result
+        document.write("<br>")
+        document.write(res5)
+
+        var vetor2 = ["Fusca", "Onix"]
+        var res6 = vetor2.push("Opala") // result
+        document.write("<br>")
+        document.write(res6)
+        document.write("<br>")
+        document.write(vetor2)
+
+        var vetor3 = ['d', 'y', 'a', 'n', h]
+        vetor3.sort() // result 
+        document.write()
+
+
+    </script>
+
+</body>
+</html>
