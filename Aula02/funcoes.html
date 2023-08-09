@@ -9,6 +9,8 @@
     <h1>Resultado</h1>
     <button onclick="sub()">Ver resultado!</button>
 
+    <div id="result"></div>
+
     <script>
       //----------------------------------------
       function somaDiferentes(a, b) {
@@ -22,7 +24,9 @@
       //----------------------------------------
       function sub() {
         let r = somaDiferentes(2, 3); // dinamic
-        document.write(r);
+        // document.write(r);
+        // QUESTAO DE PROVA
+        document.getElementById('result')
       }
       //----------------------------------------
       function areaTriangulo(b, h) {

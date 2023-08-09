@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 3 - Arrays</title>
+</head>
+
+<body>
+
+  <h1>Objetos String</h1>
+
+  <ul>
+    <li>valueOf()</li> - retorna o valor primitivo do objeto
+    <li>charAt()</li> - retorna uma string contendo o caractere de posicao
+    <li>concat(string, string, ..., n)</li> - este método retorna uma string contendo string + stringN
+    <li>replace</li> - busca na string uma substring que seja igual ao conteúdo
+    <li>slice(ini, fim)</li> - retorna a substring contendo os carac. inicio ate o fim
+    <li>split(separator, limit)</li> - retorna um obj. array contendo as substring entre o separator e limite
+    <li>substring(inicio, fim)</li> - retorna o resulta da conversão do objeto que o chamou o método (inicio até fim)
+    <li>toLowerCase()</li> -
+    <li>toUpperCase()</li> -
+  </ul>
+
+  <h1>Arrays</h1>
+  <ul>
+    <li>concat</li> - agrupa todos os elementos do array
+    <li>pop()</li> - o último elemento do array removido
+    <li>push()</li> - insere o elemento no final do vetor
+    <li>shift()</li> - o primeiro elemento é removido
+    <li>sort()</li> - ordena vetor (string)
+    <li>length()</li> - propriedade contém o tamanho do vetor
+  </ul>
+
+
+  <script>
+
+    // valueOf
+    var s = new String("Gerador de campos")
+    var str = s.valueOf()
+
+    // charAt
+    var str1 = "Instituto"
+    var carac = str1.charAt(3)
+
+    // concat
+    var str2 = "Praticando ", str3 = "Javascript"
+    var result = str2.concat(str3)
+
+    // replace
+    var a = "Não esqueca de estudar"
+    var res1 = a.replace("esqueca", "pare")
+
+    // slice
+    var str4 = "Até mais e obrigado!"
+    var res2 = str4.slice(4, 10) // result => "mais e "
+    var res3 = str4.slice(7) // result => "s e obrigado!"
+    var res4 = str4.slice(-5, -1) // result => "gado"
+
+    // split
+    var data = "Terra, Marte, Jupter"
+    var arr1 = data.split(", ") // result => ['terra', 'marte', 'jupter']
+    var arr2 = data.split(", ", 2) // result => ['terra', 'marte']
+
+
+    // ARRAYS
+    var vetor = [4, 8, 15, 16, 23, 42]
+    var res5 = vetor.pop() // result =>
+
+    var vetor2 = ["Fusca", "Onix"]
+    var res6 = vetor.push('Opala') // resp => 
+
+    // sort 
+    var vetor3 = ['d', 'y', 'a', 'n', 'h']
+    vetor3.sort() // result =>
+
+
+
+  </script>
+</body>
+
+</html>
