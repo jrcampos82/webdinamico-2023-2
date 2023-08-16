@@ -4,10 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .bgColor {
+      background: #3f3;
+      box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      border: 1px solid red;
+      padding: 10px;
+    }
 
+    .blue {
+      color: blue;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-<div id="container" onmouseover="alterText()">
+<div id="container">
 
   <p class="text">Lorem ipsum dolor sit.</p>
 
@@ -21,13 +34,21 @@
     
     const div = document.getElementById('container')
 
+    // div.style.background = '#3f3'
+    // div.style.border = '2px solid red'
+    // div.style.boxShadow = '0 5px 1px rgba(0, 0, 0, 0.2)'
+
+    div.classList.add('bgColor')
+
+    // div.classList.remove('text')
+
     const text = document.getElementsByClassName('text')
 
     const name = document.getElementsByName('text-name')
 
     const p = document.getElementsByTagName('p')
 
-    
+    text[1].classList.add('blue')
 
     console.log(div)
     console.log(text)
@@ -36,10 +57,7 @@
     
 
     
-    
-    function alterText(){
-      div.innerHTML = '<p>Outro texto!</p>'
-    }
+  
 
 
   </script>
