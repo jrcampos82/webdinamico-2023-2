@@ -1,8 +1,13 @@
+
+
 var a = 10; // inteiro
 var b = "20";
 var c = false;
 
 // a = "beto"; // troca de tipagem -> objeto string
+
+a = 20
+
 
 let x = 20;
 
